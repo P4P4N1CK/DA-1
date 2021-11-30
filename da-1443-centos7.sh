@@ -21,6 +21,10 @@ wget "https://raw.githubusercontent.com/irf1404/DACONFIG/master/glibc-common-2.1
 wget "https://raw.githubusercontent.com/irf1404/DACONFIG/master/glibc-devel-2.17-55.el6.x86_64.rpm"
 wget "https://raw.githubusercontent.com/irf1404/DACONFIG/master/glibc-headers-2.17-55.el6.x86_64.rpm"
 
+echo "multilib_policy=all" >> /etc/yum.conf
+ln -s /usr/lib/libssl.so /usr/lib/libssl.so.6
+ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.6
+
 sudo rpm -Uvh glibc-2.17-55.el6.x86_64.rpm \
 glibc-common-2.17-55.el6.x86_64.rpm \
 glibc-devel-2.17-55.el6.x86_64.rpm \
@@ -1884,3 +1888,4 @@ sleep 1
 printf \\a
 
 exit ${RET}
+
