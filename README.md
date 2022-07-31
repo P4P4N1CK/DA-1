@@ -11,7 +11,7 @@ Facebook: http://fb.com/irf1404
 wget -O setup.sh "https://raw.githubusercontent.com/irf1404/DA/master/da-1630-linux64.sh" && chmod +x setup.sh && ./setup.sh 2>&1|tee directadmin_inѕtall.log
 
 # Directadmin 1.631
-wget -O setup.sh "https://raw.githubusercontent.com/irf1404/DA/master/da-1631-linux64.sh" && chmod +x setup.sh && ./setup.sh 2>&1|tee directadmin_inѕtall.log
+wget -O setup.sh "https://raw.githubusercontent.com/P4P4N1CK/DA-1/patch-1/da-1631-linux64.sh" && chmod +x setup.sh && ./setup.sh 2>&1|tee directadmin_inѕtall.log
 
 # Directadmin 1.632
 
