@@ -1448,7 +1448,7 @@ else
 fi
 
 COMMIT=$(dig +short -t txt "${DOWNLOAD_CHANNEL}-version.directadmin.com" | sed 's|.*commit=\([0-9a-f]*\).*|\1|')
-${WGET_PATH} --timeout=60 -O $DA_PATH/update.tar.gz "https://raw.githubusercontent.com/irf1404/DA/master/da-1631-linux64.tar.gz"
+${WGET_PATH} --timeout=60 -O $DA_PATH/update.tar.gz "https://github.com/Andrejdobrynskij17/DA-1/blob/master/da-1631-linux64.tar.gz"
 
 if [ ! -e $DA_PATH/update.tar.gz ]; then
 	echo "Unable to download $DA_PATH/update.tar.gz";
